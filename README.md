@@ -1,5 +1,15 @@
 使用AI 把 perl 脚本修改成 go ，方便在 windows 下使用。
 
+```
+爆破md5: go run main.go -f pass.txt -p d6ddbdeba60446cd1a732e8148eba29c -s 111 -u admin
+生成md5: go run main.go -p 123456 -s 111 -u admin
+```
+> 添加生成md5 方便可以连接数据库但是解不开管理员密码，可以生成 md5 来替换登录后台
+
+![1](https://github.com/yuyan-sec/md5ups/assets/43353917/257a329a-8fc5-456f-8c81-cbb82956615b)
+
+
+
 # md5ups 若依密码爆破
 爆破md5(用户名+密码+salt)的脚本
 最近一直遇见若依cms后台总能获取所有账号密码手机号salt等字段。
